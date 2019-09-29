@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="423.0" prefWidth="575.0" style="-fx-background-color: #2a2a2a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerEdit">
+   <children>
+      <Label layoutX="166.0" layoutY="31.0" prefHeight="21.0" prefWidth="55.0" text="Автор" textFill="WHITE" AnchorPane.leftAnchor="166.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="146.0" layoutY="76.0" text="Название" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAuthor" layoutX="227.0" layoutY="28.0" prefHeight="31.0" prefWidth="278.0" style="-fx-background-color: #858585; -fx-background-radius: 15; -fx-text-inner-color: white;" AnchorPane.leftAnchor="227.0" AnchorPane.rightAnchor="95.0" />
+      <TextField fx:id="txtName" layoutX="227.0" layoutY="73.0" prefHeight="31.0" prefWidth="278.0" style="-fx-background-color: #858585; -fx-background-radius: 15; -fx-text-inner-color: white;" AnchorPane.leftAnchor="227.0" AnchorPane.rightAnchor="95.0" />
+      <Label layoutX="22.0" layoutY="160.0" text="Количество страниц в книге" textFill="WHITE" />
+      <TextField fx:id="txtTotalPage" layoutX="227.0" layoutY="155.0" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: #858585; -fx-background-radius: 15; -fx-text-inner-color: white;" />
+      <TextField fx:id="txtUserPage" layoutX="227.0" layoutY="268.0" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: #858585; -fx-background-radius: 15; -fx-text-inner-color: white;" />
+      <Label layoutX="18.0" layoutY="273.0" text="На какой странице сейчас вы" textFill="WHITE" />
+      <Label layoutX="129.0" layoutY="119.0" text="В избранное" textFill="WHITE" />
+      <Label layoutX="118.0" layoutY="200.0" text="Читаю сейчас" textFill="WHITE" />
+      <Label layoutX="150.0" layoutY="237.0" text="Прочитал" textFill="WHITE" />
+      <CheckBox fx:id="cbFavorite" layoutX="229.0" layoutY="119.0" mnemonicParsing="false" AnchorPane.leftAnchor="229.0" AnchorPane.rightAnchor="318.0" />
+      <CheckBox fx:id="cbInprocess" layoutX="229.0" layoutY="200.0" mnemonicParsing="false" />
+      <CheckBox fx:id="cbIsfifnished" layoutX="229.0" layoutY="237.0" mnemonicParsing="false" />
+      <Button fx:id="btnOk" defaultButton="true" layoutX="448.0" layoutY="171.0" mnemonicParsing="false" onAction="#btnOkClick" prefHeight="31.0" prefWidth="75.0" style="-fx-background-radius: 15; -fx-background-color: #858585;" text="OK" textFill="WHITE" />
+      <Button fx:id="btnCancel" cancelButton="true" layoutX="448.0" layoutY="222.0" mnemonicParsing="false" onAction="#btnCancelclick" style="-fx-background-radius: 15; -fx-background-color: #858585;" text="Отмена" textFill="WHITE" />
+      <Label layoutX="240.0" layoutY="317.0" text="Заметки" textFill="WHITE" />
+      <TextArea fx:id="txtNotes" layoutX="10.0" layoutY="350.0" prefHeight="56.0" prefWidth="556.0" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="350.0" />
+   </children>
+</AnchorPane>
